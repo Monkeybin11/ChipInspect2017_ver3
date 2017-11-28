@@ -1,0 +1,227 @@
+C:\Users\idiol\Desktop\Job Project\1612LG이노텍\LedChipPassFail_first\LedChipPassFail_first\bin\x64\Debug\LedChipPassFail_first.exe.config
+C:\Users\idiol\Desktop\Job Project\1612LG이노텍\LedChipPassFail_first\LedChipPassFail_first\bin\x64\Debug\LedChipPassFail_first.exe
+C:\Users\idiol\Desktop\Job Project\1612LG이노텍\LedChipPassFail_first\LedChipPassFail_first\bin\x64\Debug\LedChipPassFail_first.pdb
+C:\Users\idiol\Desktop\Job Project\1612LG이노텍\LedChipPassFail_first\LedChipPassFail_first\bin\x64\Debug\Emgu.CV.UI.dll
+C:\Users\idiol\Desktop\Job Project\1612LG이노텍\LedChipPassFail_first\LedChipPassFail_first\bin\x64\Debug\Emgu.CV.UI.GL.dll
+C:\Users\idiol\Desktop\Job Project\1612LG이노텍\LedChipPassFail_first\LedChipPassFail_first\bin\x64\Debug\Emgu.CV.World.dll
+C:\Users\idiol\Desktop\Job Project\1612LG이노텍\LedChipPassFail_first\LedChipPassFail_first\bin\x64\Debug\LanguageExt.Core.dll
+C:\Users\idiol\Desktop\Job Project\1612LG이노텍\LedChipPassFail_first\LedChipPassFail_first\bin\x64\Debug\MahApps.Metro.dll
+C:\Users\idiol\Desktop\Job Project\1612LG이노텍\LedChipPassFail_first\LedChipPassFail_first\bin\x64\Debug\System.Windows.Interactivity.dll
+C:\Users\idiol\Desktop\Job Project\1612LG이노텍\LedChipPassFail_first\LedChipPassFail_first\bin\x64\Debug\ZedGraph.dll
+C:\Users\idiol\Desktop\Job Project\1612LG이노텍\LedChipPassFail_first\LedChipPassFail_first\bin\x64\Debug\Emgu.CV.UI.xml
+C:\Users\idiol\Desktop\Job Project\1612LG이노텍\LedChipPassFail_first\LedChipPassFail_first\bin\x64\Debug\Emgu.CV.UI.GL.xml
+C:\Users\idiol\Desktop\Job Project\1612LG이노텍\LedChipPassFail_first\LedChipPassFail_first\bin\x64\Debug\Emgu.CV.World.xml
+C:\Users\idiol\Desktop\Job Project\1612LG이노텍\LedChipPassFail_first\LedChipPassFail_first\bin\x64\Debug\MahApps.Metro.pdb
+C:\Users\idiol\Desktop\Job Project\1612LG이노텍\LedChipPassFail_first\LedChipPassFail_first\bin\x64\Debug\MahApps.Metro.xml
+C:\Users\idiol\Desktop\Job Project\1612LG이노텍\LedChipPassFail_first\LedChipPassFail_first\bin\x64\Debug\ZedGraph.xml
+C:\Users\idiol\Desktop\Job Project\1612LG이노텍\LedChipPassFail_first\LedChipPassFail_first\bin\x64\Debug\de\ZedGraph.resources.dll
+C:\Users\idiol\Desktop\Job Project\1612LG이노텍\LedChipPassFail_first\LedChipPassFail_first\bin\x64\Debug\es\ZedGraph.resources.dll
+C:\Users\idiol\Desktop\Job Project\1612LG이노텍\LedChipPassFail_first\LedChipPassFail_first\bin\x64\Debug\fr\ZedGraph.resources.dll
+C:\Users\idiol\Desktop\Job Project\1612LG이노텍\LedChipPassFail_first\LedChipPassFail_first\bin\x64\Debug\hu\ZedGraph.resources.dll
+C:\Users\idiol\Desktop\Job Project\1612LG이노텍\LedChipPassFail_first\LedChipPassFail_first\bin\x64\Debug\it\ZedGraph.resources.dll
+C:\Users\idiol\Desktop\Job Project\1612LG이노텍\LedChipPassFail_first\LedChipPassFail_first\bin\x64\Debug\ja\ZedGraph.resources.dll
+C:\Users\idiol\Desktop\Job Project\1612LG이노텍\LedChipPassFail_first\LedChipPassFail_first\bin\x64\Debug\pt\ZedGraph.resources.dll
+C:\Users\idiol\Desktop\Job Project\1612LG이노텍\LedChipPassFail_first\LedChipPassFail_first\bin\x64\Debug\ru\ZedGraph.resources.dll
+C:\Users\idiol\Desktop\Job Project\1612LG이노텍\LedChipPassFail_first\LedChipPassFail_first\bin\x64\Debug\sk\ZedGraph.resources.dll
+C:\Users\idiol\Desktop\Job Project\1612LG이노텍\LedChipPassFail_first\LedChipPassFail_first\bin\x64\Debug\sv\ZedGraph.resources.dll
+C:\Users\idiol\Desktop\Job Project\1612LG이노텍\LedChipPassFail_first\LedChipPassFail_first\bin\x64\Debug\tr\ZedGraph.resources.dll
+C:\Users\idiol\Desktop\Job Project\1612LG이노텍\LedChipPassFail_first\LedChipPassFail_first\bin\x64\Debug\zh-cn\ZedGraph.resources.dll
+C:\Users\idiol\Desktop\Job Project\1612LG이노텍\LedChipPassFail_first\LedChipPassFail_first\bin\x64\Debug\zh-tw\ZedGraph.resources.dll
+C:\Users\idiol\Desktop\Job Project\1612LG이노텍\LedChipPassFail_first\LedChipPassFail_first\obj\x64\Debug\Resources\Icons.baml
+C:\Users\idiol\Desktop\Job Project\1612LG이노텍\LedChipPassFail_first\LedChipPassFail_first\obj\x64\Debug\Resources\IconsNonShared.baml
+C:\Users\idiol\Desktop\Job Project\1612LG이노텍\LedChipPassFail_first\LedChipPassFail_first\obj\x64\Debug\MainWindow.g.cs
+C:\Users\idiol\Desktop\Job Project\1612LG이노텍\LedChipPassFail_first\LedChipPassFail_first\obj\x64\Debug\App.g.cs
+C:\Users\idiol\Desktop\Job Project\1612LG이노텍\LedChipPassFail_first\LedChipPassFail_first\obj\x64\Debug\LedChipPassFail_first_MarkupCompile.cache
+C:\Users\idiol\Desktop\Job Project\1612LG이노텍\LedChipPassFail_first\LedChipPassFail_first\obj\x64\Debug\LedChipPassFail_first_MarkupCompile.lref
+C:\Users\idiol\Desktop\Job Project\1612LG이노텍\LedChipPassFail_first\LedChipPassFail_first\obj\x64\Debug\App.baml
+C:\Users\idiol\Desktop\Job Project\1612LG이노텍\LedChipPassFail_first\LedChipPassFail_first\obj\x64\Debug\MainWindow.baml
+C:\Users\idiol\Desktop\Job Project\1612LG이노텍\LedChipPassFail_first\LedChipPassFail_first\obj\x64\Debug\LedChipPassFail_first.g.resources
+C:\Users\idiol\Desktop\Job Project\1612LG이노텍\LedChipPassFail_first\LedChipPassFail_first\obj\x64\Debug\LedChipPassFail_first.Properties.Resources.resources
+C:\Users\idiol\Desktop\Job Project\1612LG이노텍\LedChipPassFail_first\LedChipPassFail_first\obj\x64\Debug\LedChipPassFail_first.csproj.GenerateResource.Cache
+C:\Users\idiol\Desktop\Job Project\1612LG이노텍\LedChipPassFail_first\LedChipPassFail_first\obj\x64\Debug\LedChipPassFail_first.exe
+C:\Users\idiol\Desktop\Job Project\1612LG이노텍\LedChipPassFail_first\LedChipPassFail_first\obj\x64\Debug\LedChipPassFail_first.pdb
+C:\Users\idiol\Desktop\Job Project\1612LG이노텍\LedChipPassFail_first\LedChipPassFail_first\obj\x64\Debug\LedChipPassFail_first.csprojResolveAssemblyReference.cache
+C:\Users\idiol\Desktop\Job Project\1612LG이노텍\LedChipPassFail_first\LedChipPassFail_first\obj\x64\Debug\LedChipPassFail_first_Content.g.cs
+C:\Users\idiol\Desktop\Job Project\1612LG이노텍\LedChipPassFail_first\LedChipPassFail_first\bin\x64\Debug\Accord.dll.config
+C:\Users\idiol\Desktop\Job Project\1612LG이노텍\LedChipPassFail_first\LedChipPassFail_first\bin\x64\Debug\Accord.dll
+C:\Users\idiol\Desktop\Job Project\1612LG이노텍\LedChipPassFail_first\LedChipPassFail_first\bin\x64\Debug\Accord.Math.Core.dll
+C:\Users\idiol\Desktop\Job Project\1612LG이노텍\LedChipPassFail_first\LedChipPassFail_first\bin\x64\Debug\Accord.Math.dll
+C:\Users\idiol\Desktop\Job Project\1612LG이노텍\LedChipPassFail_first\LedChipPassFail_first\bin\x64\Debug\Accord.Math.Noncommercial.dll
+C:\Users\idiol\Desktop\Job Project\1612LG이노텍\LedChipPassFail_first\LedChipPassFail_first\bin\x64\Debug\Accord.xml
+C:\Users\idiol\Desktop\Job Project\1612LG이노텍\LedChipPassFail_first\LedChipPassFail_first\bin\x64\Debug\Accord.Math.xml
+C:\Users\idiol\Desktop\Job Project\1612LG이노텍\LedChipPassFail_first\LedChipPassFail_first\bin\x64\Debug\Accord.Math.Core.xml
+C:\Users\idiol\Desktop\Job Project\1612LG이노텍\LedChipPassFail_first\LedChipPassFail_first\bin\x64\Debug\Accord.Math.Noncommercial.xml
+C:\004gitproject\CsChipVision\LedChipPassFail_first - Backup\LedChipPassFail_first\bin\x64\Debug\LedChipPassFail_first.exe.config
+C:\004gitproject\CsChipVision\LedChipPassFail_first - Backup\LedChipPassFail_first\obj\x64\Debug\LedChipPassFail_first.exe
+C:\004gitproject\CsChipVision\LedChipPassFail_first - Backup\LedChipPassFail_first\obj\x64\Debug\LedChipPassFail_first.pdb
+C:\004gitproject\CsChipVision\LedChipPassFail_first - Backup\LedChipPassFail_first\bin\x64\Debug\Accord.dll.config
+C:\004gitproject\CsChipVision\LedChipPassFail_first - Backup\LedChipPassFail_first\bin\x64\Debug\LedChipPassFail_first.exe
+C:\004gitproject\CsChipVision\LedChipPassFail_first - Backup\LedChipPassFail_first\bin\x64\Debug\LedChipPassFail_first.pdb
+C:\004gitproject\CsChipVision\LedChipPassFail_first - Backup\LedChipPassFail_first\bin\x64\Debug\Accord.dll
+C:\004gitproject\CsChipVision\LedChipPassFail_first - Backup\LedChipPassFail_first\bin\x64\Debug\Accord.Math.Core.dll
+C:\004gitproject\CsChipVision\LedChipPassFail_first - Backup\LedChipPassFail_first\bin\x64\Debug\Accord.Math.dll
+C:\004gitproject\CsChipVision\LedChipPassFail_first - Backup\LedChipPassFail_first\bin\x64\Debug\Accord.Math.Noncommercial.dll
+C:\004gitproject\CsChipVision\LedChipPassFail_first - Backup\LedChipPassFail_first\bin\x64\Debug\Emgu.CV.UI.dll
+C:\004gitproject\CsChipVision\LedChipPassFail_first - Backup\LedChipPassFail_first\bin\x64\Debug\Emgu.CV.UI.GL.dll
+C:\004gitproject\CsChipVision\LedChipPassFail_first - Backup\LedChipPassFail_first\bin\x64\Debug\Emgu.CV.World.dll
+C:\004gitproject\CsChipVision\LedChipPassFail_first - Backup\LedChipPassFail_first\bin\x64\Debug\LanguageExt.Core.dll
+C:\004gitproject\CsChipVision\LedChipPassFail_first - Backup\LedChipPassFail_first\bin\x64\Debug\MahApps.Metro.dll
+C:\004gitproject\CsChipVision\LedChipPassFail_first - Backup\LedChipPassFail_first\bin\x64\Debug\System.Windows.Interactivity.dll
+C:\004gitproject\CsChipVision\LedChipPassFail_first - Backup\LedChipPassFail_first\bin\x64\Debug\ZedGraph.dll
+C:\004gitproject\CsChipVision\LedChipPassFail_first - Backup\LedChipPassFail_first\bin\x64\Debug\Accord.xml
+C:\004gitproject\CsChipVision\LedChipPassFail_first - Backup\LedChipPassFail_first\bin\x64\Debug\Accord.Math.xml
+C:\004gitproject\CsChipVision\LedChipPassFail_first - Backup\LedChipPassFail_first\bin\x64\Debug\Accord.Math.Core.xml
+C:\004gitproject\CsChipVision\LedChipPassFail_first - Backup\LedChipPassFail_first\bin\x64\Debug\Accord.Math.Noncommercial.xml
+C:\004gitproject\CsChipVision\LedChipPassFail_first - Backup\LedChipPassFail_first\bin\x64\Debug\Emgu.CV.UI.xml
+C:\004gitproject\CsChipVision\LedChipPassFail_first - Backup\LedChipPassFail_first\bin\x64\Debug\Emgu.CV.UI.GL.xml
+C:\004gitproject\CsChipVision\LedChipPassFail_first - Backup\LedChipPassFail_first\bin\x64\Debug\Emgu.CV.World.xml
+C:\004gitproject\CsChipVision\LedChipPassFail_first - Backup\LedChipPassFail_first\bin\x64\Debug\MahApps.Metro.pdb
+C:\004gitproject\CsChipVision\LedChipPassFail_first - Backup\LedChipPassFail_first\bin\x64\Debug\MahApps.Metro.xml
+C:\004gitproject\CsChipVision\LedChipPassFail_first - Backup\LedChipPassFail_first\bin\x64\Debug\ZedGraph.xml
+C:\004gitproject\CsChipVision\LedChipPassFail_first - Backup\LedChipPassFail_first\bin\x64\Debug\de\ZedGraph.resources.dll
+C:\004gitproject\CsChipVision\LedChipPassFail_first - Backup\LedChipPassFail_first\bin\x64\Debug\es\ZedGraph.resources.dll
+C:\004gitproject\CsChipVision\LedChipPassFail_first - Backup\LedChipPassFail_first\bin\x64\Debug\fr\ZedGraph.resources.dll
+C:\004gitproject\CsChipVision\LedChipPassFail_first - Backup\LedChipPassFail_first\bin\x64\Debug\hu\ZedGraph.resources.dll
+C:\004gitproject\CsChipVision\LedChipPassFail_first - Backup\LedChipPassFail_first\bin\x64\Debug\it\ZedGraph.resources.dll
+C:\004gitproject\CsChipVision\LedChipPassFail_first - Backup\LedChipPassFail_first\bin\x64\Debug\ja\ZedGraph.resources.dll
+C:\004gitproject\CsChipVision\LedChipPassFail_first - Backup\LedChipPassFail_first\bin\x64\Debug\pt\ZedGraph.resources.dll
+C:\004gitproject\CsChipVision\LedChipPassFail_first - Backup\LedChipPassFail_first\bin\x64\Debug\ru\ZedGraph.resources.dll
+C:\004gitproject\CsChipVision\LedChipPassFail_first - Backup\LedChipPassFail_first\bin\x64\Debug\sk\ZedGraph.resources.dll
+C:\004gitproject\CsChipVision\LedChipPassFail_first - Backup\LedChipPassFail_first\bin\x64\Debug\sv\ZedGraph.resources.dll
+C:\004gitproject\CsChipVision\LedChipPassFail_first - Backup\LedChipPassFail_first\bin\x64\Debug\tr\ZedGraph.resources.dll
+C:\004gitproject\CsChipVision\LedChipPassFail_first - Backup\LedChipPassFail_first\bin\x64\Debug\zh-cn\ZedGraph.resources.dll
+C:\004gitproject\CsChipVision\LedChipPassFail_first - Backup\LedChipPassFail_first\bin\x64\Debug\zh-tw\ZedGraph.resources.dll
+C:\004gitproject\CsChipVision\LedChipPassFail_first - Backup\LedChipPassFail_first\obj\x64\Debug\LedChipPassFail_first.csprojResolveAssemblyReference.cache
+C:\004gitproject\CsChipVision\LedChipPassFail_first - Backup\LedChipPassFail_first\obj\x64\Debug\Resources\Icons.baml
+C:\004gitproject\CsChipVision\LedChipPassFail_first - Backup\LedChipPassFail_first\obj\x64\Debug\Resources\IconsNonShared.baml
+C:\004gitproject\CsChipVision\LedChipPassFail_first - Backup\LedChipPassFail_first\obj\x64\Debug\MainWindow.g.cs
+C:\004gitproject\CsChipVision\LedChipPassFail_first - Backup\LedChipPassFail_first\obj\x64\Debug\App.g.cs
+C:\004gitproject\CsChipVision\LedChipPassFail_first - Backup\LedChipPassFail_first\obj\x64\Debug\LedChipPassFail_first_Content.g.cs
+C:\004gitproject\CsChipVision\LedChipPassFail_first - Backup\LedChipPassFail_first\obj\x64\Debug\LedChipPassFail_first_MarkupCompile.cache
+C:\004gitproject\CsChipVision\LedChipPassFail_first - Backup\LedChipPassFail_first\obj\x64\Debug\LedChipPassFail_first_MarkupCompile.lref
+C:\004gitproject\CsChipVision\LedChipPassFail_first - Backup\LedChipPassFail_first\obj\x64\Debug\App.baml
+C:\004gitproject\CsChipVision\LedChipPassFail_first - Backup\LedChipPassFail_first\obj\x64\Debug\MainWindow.baml
+C:\004gitproject\CsChipVision\LedChipPassFail_first - Backup\LedChipPassFail_first\obj\x64\Debug\LedChipPassFail_first.g.resources
+C:\004gitproject\CsChipVision\LedChipPassFail_first - Backup\LedChipPassFail_first\obj\x64\Debug\LedChipPassFail_first.Properties.Resources.resources
+C:\004gitproject\CsChipVision\LedChipPassFail_first - Backup\LedChipPassFail_first\obj\x64\Debug\LedChipPassFail_first.csproj.GenerateResource.Cache
+C:\004gitproject\CsChipVision\LedChipPassFail_v1.0 - Backup\LedChipPassFail_first\bin\x64\Debug\LedChipPassFail_first.exe.config
+C:\004gitproject\CsChipVision\LedChipPassFail_v1.0 - Backup\LedChipPassFail_first\obj\x64\Debug\LedChipPassFail_first.exe
+C:\004gitproject\CsChipVision\LedChipPassFail_v1.0 - Backup\LedChipPassFail_first\obj\x64\Debug\LedChipPassFail_first.pdb
+C:\004gitproject\CsChipVision\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\LedChipPassFail_first.exe.config
+C:\004gitproject\CsChipVision\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\obj\x64\Debug\LedChipPassFail_first.exe
+C:\004gitproject\CsChipVision\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\obj\x64\Debug\LedChipPassFail_first.pdb
+C:\004gitproject\CsChipVision\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\obj\x64\Debug\LedChipPassFail_first.csprojResolveAssemblyReference.cache
+C:\004gitproject\CsChipVision\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\obj\x64\Debug\Resources\Icons.baml
+C:\004gitproject\CsChipVision\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\obj\x64\Debug\Resources\IconsNonShared.baml
+C:\004gitproject\CsChipVision\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\obj\x64\Debug\MainWindow.g.cs
+C:\004gitproject\CsChipVision\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\obj\x64\Debug\App.g.cs
+C:\004gitproject\CsChipVision\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\obj\x64\Debug\LedChipPassFail_first_Content.g.cs
+C:\004gitproject\CsChipVision\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\obj\x64\Debug\LedChipPassFail_first_MarkupCompile.cache
+C:\004gitproject\CsChipVision\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\obj\x64\Debug\LedChipPassFail_first_MarkupCompile.lref
+C:\004gitproject\CsChipVision\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\Accord.dll.config
+C:\004gitproject\CsChipVision\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\LedChipPassFail_first.exe
+C:\004gitproject\CsChipVision\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\LedChipPassFail_first.pdb
+C:\004gitproject\CsChipVision\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\Accord.dll
+C:\004gitproject\CsChipVision\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\Accord.Math.Core.dll
+C:\004gitproject\CsChipVision\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\Accord.Math.dll
+C:\004gitproject\CsChipVision\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\Accord.Math.Noncommercial.dll
+C:\004gitproject\CsChipVision\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\Emgu.CV.UI.dll
+C:\004gitproject\CsChipVision\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\Emgu.CV.UI.GL.dll
+C:\004gitproject\CsChipVision\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\Emgu.CV.World.dll
+C:\004gitproject\CsChipVision\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\Emgu_processingTool.dll
+C:\004gitproject\CsChipVision\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\LanguageExt.Core.dll
+C:\004gitproject\CsChipVision\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\MahApps.Metro.dll
+C:\004gitproject\CsChipVision\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\System.Windows.Interactivity.dll
+C:\004gitproject\CsChipVision\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\Util_Tool.dll
+C:\004gitproject\CsChipVision\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\ZedGraph.dll
+C:\004gitproject\CsChipVision\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\Emgu_processingTool.pdb
+C:\004gitproject\CsChipVision\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\Util_Tool.pdb
+C:\004gitproject\CsChipVision\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\Accord.xml
+C:\004gitproject\CsChipVision\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\Accord.Math.xml
+C:\004gitproject\CsChipVision\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\Accord.Math.Core.xml
+C:\004gitproject\CsChipVision\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\Accord.Math.Noncommercial.xml
+C:\004gitproject\CsChipVision\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\Emgu.CV.UI.xml
+C:\004gitproject\CsChipVision\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\Emgu.CV.UI.GL.xml
+C:\004gitproject\CsChipVision\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\Emgu.CV.World.xml
+C:\004gitproject\CsChipVision\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\MahApps.Metro.pdb
+C:\004gitproject\CsChipVision\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\MahApps.Metro.xml
+C:\004gitproject\CsChipVision\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\ZedGraph.xml
+C:\004gitproject\CsChipVision\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\de\ZedGraph.resources.dll
+C:\004gitproject\CsChipVision\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\es\ZedGraph.resources.dll
+C:\004gitproject\CsChipVision\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\fr\ZedGraph.resources.dll
+C:\004gitproject\CsChipVision\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\hu\ZedGraph.resources.dll
+C:\004gitproject\CsChipVision\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\it\ZedGraph.resources.dll
+C:\004gitproject\CsChipVision\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\ja\ZedGraph.resources.dll
+C:\004gitproject\CsChipVision\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\pt\ZedGraph.resources.dll
+C:\004gitproject\CsChipVision\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\ru\ZedGraph.resources.dll
+C:\004gitproject\CsChipVision\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\sk\ZedGraph.resources.dll
+C:\004gitproject\CsChipVision\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\sv\ZedGraph.resources.dll
+C:\004gitproject\CsChipVision\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\tr\ZedGraph.resources.dll
+C:\004gitproject\CsChipVision\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\zh-cn\ZedGraph.resources.dll
+C:\004gitproject\CsChipVision\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\zh-tw\ZedGraph.resources.dll
+C:\004gitproject\CsChipVision\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\obj\x64\Debug\App.baml
+C:\004gitproject\CsChipVision\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\obj\x64\Debug\MainWindow.baml
+C:\004gitproject\CsChipVision\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\obj\x64\Debug\LedChipPassFail_first.g.resources
+C:\004gitproject\CsChipVision\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\obj\x64\Debug\LedChipPassFail_first.Properties.Resources.resources
+C:\004gitproject\CsChipVision\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\obj\x64\Debug\LedChipPassFail_first.csproj.GenerateResource.Cache
+C:\004gitproject\CsChipVision\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\Microsoft.VisualStudio.DebuggerVisualizers.dll
+C:\004gitproject\CsChipVision\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\Microsoft.VisualStudio.DebuggerVisualizers.xml
+D:\03JobPro\2017\01_LG\Program\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\LedChipPassFail_first.exe.config
+D:\03JobPro\2017\01_LG\Program\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\obj\x64\Debug\LedChipPassFail_first.exe
+D:\03JobPro\2017\01_LG\Program\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\obj\x64\Debug\LedChipPassFail_first.pdb
+D:\03JobPro\2017\01_LG\Program\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\obj\x64\Debug\LedChipPassFail_first.csprojResolveAssemblyReference.cache
+D:\03JobPro\2017\01_LG\Program\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\obj\x64\Debug\Resources\Icons.baml
+D:\03JobPro\2017\01_LG\Program\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\obj\x64\Debug\Resources\IconsNonShared.baml
+D:\03JobPro\2017\01_LG\Program\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\obj\x64\Debug\MainWindow.g.cs
+D:\03JobPro\2017\01_LG\Program\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\obj\x64\Debug\App.g.cs
+D:\03JobPro\2017\01_LG\Program\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\obj\x64\Debug\LedChipPassFail_first_Content.g.cs
+D:\03JobPro\2017\01_LG\Program\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\obj\x64\Debug\LedChipPassFail_first_MarkupCompile.cache
+D:\03JobPro\2017\01_LG\Program\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\obj\x64\Debug\LedChipPassFail_first_MarkupCompile.lref
+D:\03JobPro\2017\01_LG\Program\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\Accord.dll.config
+D:\03JobPro\2017\01_LG\Program\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\LedChipPassFail_first.exe
+D:\03JobPro\2017\01_LG\Program\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\LedChipPassFail_first.pdb
+D:\03JobPro\2017\01_LG\Program\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\Accord.dll
+D:\03JobPro\2017\01_LG\Program\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\Accord.Math.Core.dll
+D:\03JobPro\2017\01_LG\Program\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\Accord.Math.dll
+D:\03JobPro\2017\01_LG\Program\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\Accord.Math.Noncommercial.dll
+D:\03JobPro\2017\01_LG\Program\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\Emgu_processingTool.dll
+D:\03JobPro\2017\01_LG\Program\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\LanguageExt.Core.dll
+D:\03JobPro\2017\01_LG\Program\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\MahApps.Metro.dll
+D:\03JobPro\2017\01_LG\Program\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\Microsoft.VisualStudio.DebuggerVisualizers.dll
+D:\03JobPro\2017\01_LG\Program\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\System.Windows.Interactivity.dll
+D:\03JobPro\2017\01_LG\Program\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\Util_Tool.dll
+D:\03JobPro\2017\01_LG\Program\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\ZedGraph.dll
+D:\03JobPro\2017\01_LG\Program\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\Emgu_processingTool.pdb
+D:\03JobPro\2017\01_LG\Program\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\Util_Tool.pdb
+D:\03JobPro\2017\01_LG\Program\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\Accord.xml
+D:\03JobPro\2017\01_LG\Program\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\Accord.Math.xml
+D:\03JobPro\2017\01_LG\Program\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\Accord.Math.Core.xml
+D:\03JobPro\2017\01_LG\Program\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\Accord.Math.Noncommercial.xml
+D:\03JobPro\2017\01_LG\Program\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\Emgu.CV.UI.xml
+D:\03JobPro\2017\01_LG\Program\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\Emgu.CV.UI.GL.xml
+D:\03JobPro\2017\01_LG\Program\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\Emgu.CV.World.xml
+D:\03JobPro\2017\01_LG\Program\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\MahApps.Metro.pdb
+D:\03JobPro\2017\01_LG\Program\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\MahApps.Metro.xml
+D:\03JobPro\2017\01_LG\Program\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\Microsoft.VisualStudio.DebuggerVisualizers.xml
+D:\03JobPro\2017\01_LG\Program\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\ZedGraph.xml
+D:\03JobPro\2017\01_LG\Program\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\de\ZedGraph.resources.dll
+D:\03JobPro\2017\01_LG\Program\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\es\ZedGraph.resources.dll
+D:\03JobPro\2017\01_LG\Program\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\fr\ZedGraph.resources.dll
+D:\03JobPro\2017\01_LG\Program\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\hu\ZedGraph.resources.dll
+D:\03JobPro\2017\01_LG\Program\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\it\ZedGraph.resources.dll
+D:\03JobPro\2017\01_LG\Program\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\ja\ZedGraph.resources.dll
+D:\03JobPro\2017\01_LG\Program\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\pt\ZedGraph.resources.dll
+D:\03JobPro\2017\01_LG\Program\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\ru\ZedGraph.resources.dll
+D:\03JobPro\2017\01_LG\Program\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\sk\ZedGraph.resources.dll
+D:\03JobPro\2017\01_LG\Program\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\sv\ZedGraph.resources.dll
+D:\03JobPro\2017\01_LG\Program\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\tr\ZedGraph.resources.dll
+D:\03JobPro\2017\01_LG\Program\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\zh-cn\ZedGraph.resources.dll
+D:\03JobPro\2017\01_LG\Program\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\zh-tw\ZedGraph.resources.dll
+D:\03JobPro\2017\01_LG\Program\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\obj\x64\Debug\App.baml
+D:\03JobPro\2017\01_LG\Program\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\obj\x64\Debug\MainWindow.baml
+D:\03JobPro\2017\01_LG\Program\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\obj\x64\Debug\LedChipPassFail_first.g.resources
+D:\03JobPro\2017\01_LG\Program\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\obj\x64\Debug\LedChipPassFail_first.Properties.Resources.resources
+D:\03JobPro\2017\01_LG\Program\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\obj\x64\Debug\LedChipPassFail_first.csproj.GenerateResource.Cache
+C:\01gitpro\job\MIcroLED_Chip_PLInspection\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\bin\x64\Debug\LedChipPassFail_first.exe.config
+C:\01gitpro\job\MIcroLED_Chip_PLInspection\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\obj\x64\Debug\LedChipPassFail_first.exe
+C:\01gitpro\job\MIcroLED_Chip_PLInspection\LedChipPassFail_v1.2 -Position 4corner\LedChipPassFail_first\obj\x64\Debug\LedChipPassFail_first.pdb
