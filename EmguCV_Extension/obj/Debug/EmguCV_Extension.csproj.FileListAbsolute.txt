@@ -17,7 +17,6 @@ E:\ChipInspect2017_ver3\EmguCV_Extension\bin\x64\Debug\EmguCV_Extension.dll
 E:\ChipInspect2017_ver3\EmguCV_Extension\bin\x64\Debug\EmguCV_Extension.pdb
 E:\ChipInspect2017_ver3\EmguCV_Extension\bin\x64\Debug\ModelLib.dll
 E:\ChipInspect2017_ver3\EmguCV_Extension\bin\x64\Debug\SpeedyCoding.dll
-E:\ChipInspect2017_ver3\EmguCV_Extension\bin\x64\Debug\System.Collections.Immutable.dll
 E:\ChipInspect2017_ver3\EmguCV_Extension\bin\x64\Debug\System.ValueTuple.dll
 E:\ChipInspect2017_ver3\EmguCV_Extension\bin\x64\Debug\System.Collections.Immutable.xml
 E:\ChipInspect2017_ver3\EmguCV_Extension\obj\Debug\EmguCV_Extension.dll
