@@ -52,5 +52,6 @@ namespace WaferandChipProcessing
         public Dictionary<int,SampleType> LinkerSampletoMethod;
 
         public AdvancedChipPos ChipPosMode;
-    }
+		public ConstrainInfo_Playnitride CnstPN;
+	}
 }

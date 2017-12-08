@@ -53,7 +53,7 @@ namespace WaferandChipProcessing
 
 				int cropRatio = (int)nudCropRatio.Value;
 				int cropRatioAdv = (int)nudCropRatioAdv.Value;
-
+				double minInten = (double)nudIntenSumDWLimit.Value;
 
 				await Task.Run( () =>
 				{
@@ -63,6 +63,7 @@ namespace WaferandChipProcessing
 						 TestFileSavePath.Setting( name );
 						 Core.OriginImg = new Image<Gray , byte>( name );
 						 Core.ColorOriImg = new Image<Bgr , byte>( name );
+						 Core.CnstPN = new ConstrainInfo_Playnitride( Core.OriginImg.Width / 2 , Core.OriginImg.Height/2  );
 						 try
 						 {
 							 Core.TemplateImg = new Image<Gray , byte>(

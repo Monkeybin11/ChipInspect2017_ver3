@@ -32,6 +32,7 @@ using SpeedyCoding;
 namespace WaferandChipProcessing
 {
 	using static WaferandChipProcessing.Handler;
+	using static SpeedyCoding.Handler;
 	public partial class MainCore
 	{
 		public Action<Image<Gray , byte> , Image<Bgr , byte>> ProcessingStep1_Version2(
@@ -113,13 +114,6 @@ namespace WaferandChipProcessing
 					// Index list pair with boxlist
 					var indexres = GetIndexOf(APBoxTolerance ,boxlist , estRes.HLineEQs , estRes.VLineEQs );
 
-					//var idxtemp = indexres.ToArray();
-					//
-					//for ( int i = 0 ; i < boxlist.Len() ; i++ )
-					//{
-					//	Console.WriteLine( $"index {idxtemp [ i].Value.j} , {idxtemp [ i].Value.i}    Box : {boxlist[i].Y}  {boxlist [ i ].X}" );
-					//}
-
 					var resultGenerator = ImportResult.Apply( estRes.IndexPos )
 													  .Apply( boxlist)
 													  .Apply( indexres );
@@ -127,15 +121,6 @@ namespace WaferandChipProcessing
 					var drawing = DrawProcIdx.Apply(LineThickness)
 											 .Apply(color_visual_img)
 											 .Apply(indexingImage);
-					
-					
-					//var temp1 = NgResultInitializer(cHnum , cWnum);
-					//var temp2 = resultGenerator(temp1);
-					//
-					//
-					//var res2 = ImportResult( estRes.IndexPos , boxlist , indexres , temp1 );
-
-
 
 					PResult.OutData = NgResultInitializer(cHnum , cWnum)
 										.Map( resultGenerator )
@@ -389,7 +374,7 @@ namespace WaferandChipProcessing
 			=> ( ested , boxlist , boxindices , src )
 			=>
 		{
-			var updator = ResultUpdater.Apply(ested)
+			var updator = ResultUpdator.Apply(ested)
 									   .Apply(src)
 									   .Apply( Constrain(PData.IntenSumUPLimit , PData.IntenSumDWLimit));
 
@@ -399,28 +384,39 @@ namespace WaferandChipProcessing
 			return src;
 		};
 
-		Action<double [ , , ], ExResult[][] , Constrain , IndexRect > ResultUpdater
+		Action<double [ , , ], ExResult[][] , Constrain , IndexRect > ResultUpdator
 			=> ( ested , src , constrain , idxrec )
 			=> idxrec.Index.Match(
-				() => Unit() ,
-				idx =>
+				() => Unit() , // NG Case
+				idx =>  // Non_NG Case
 				{
 					var j = idx.j;
 					var i = idx.i;
 					var ypos = ested[ j,i,0];
 					var xpos = ested[ j,i,1];
+
 					var rec = idxrec.Rectangle;
 					var intenSum = SumInsideBox( rec );
-					src [ j ] [ i ] = new ExResult( j , i
-										 , ( int )ypos - ( int )( rec.Y + rec.Height / 2 )
-										 , ( int )xpos - ( int )( rec.X + rec.Width / 2 )
-										 , Classifier( intenSum  , constrain)
-										 , intenSum
-										 , rec.Width * rec.Height
-										 , rec );
-					var temp = src;
+
+					if ( InValidArea( xpos , ypos , CnstPN ) )
+					{
+						src [ j ] [ i ] = new ExResult( j , i
+											 , ( int )ypos - ( int )( rec.Y + rec.Height / 2 )
+											 , ( int )xpos - ( int )( rec.X + rec.Width / 2 )
+											 , Classifier( intenSum , constrain )
+											 , intenSum
+											 , rec.Width * rec.Height
+											 , rec );
+					}
 					return Unit();
-				});
+				} );
+
+		public Func<double , double , ConstrainInfo_Playnitride , bool> InValidArea
+			 => ( x , y , constrain )
+			 => ToTuple( x , y ).L2(  CnstPN.Center  )
+				 > constrain.BoundaryLen
+				 ? false
+				 : true ; 
 
 		private Func<double , Constrain , string> Classifier
 			=> ( inten , constrain) 
@@ -453,6 +449,7 @@ namespace WaferandChipProcessing
 
 	public class Constrain
 	{
+		public static double ValidLen => 8127; 
 		public int UpInten;
 		public int DwInten;
 	}

@@ -12,6 +12,8 @@ using System.Drawing;
 
 namespace WaferandChipProcessing.Data
 {
+	using WaferandChipProcessing;
+
     public class ImgPResult
     {
         public int ChipTotalCount { get { return ChipPassCount + ChipLowCount + ChipOverCount + ChipNOPLCount; } }
@@ -54,6 +56,10 @@ namespace WaferandChipProcessing.Data
     {
         public int Hindex;
         public int Windex;
+
+		public int HidxPN => Hindex.ToPNPosX();
+		public int WidxPN => Windex.TOPNPosY();
+
         public int HindexError;
         public int WindexError;
         public string OKNG;

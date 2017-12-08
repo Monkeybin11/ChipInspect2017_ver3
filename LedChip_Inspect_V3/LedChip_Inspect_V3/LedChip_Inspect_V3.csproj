@@ -194,6 +194,7 @@
     </ApplicationDefinition>
     <Compile Include="Epi_Core\Epi_Helper.cs" />
     <Compile Include="Epi_Core\PreProccessingSelector.cs" />
+    <Compile Include="Data\ConstrainInfo_Playnitride.cs" />
     <Compile Include="MainCore\MainCore_SampleMethod.cs" />
     <Compile Include="MainCore\MinCore_AlgorithmParameter.cs" />
     <Compile Include="MainCore\MainCore_Processing_Version2.cs" />
