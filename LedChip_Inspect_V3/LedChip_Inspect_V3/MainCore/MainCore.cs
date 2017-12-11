@@ -224,7 +224,7 @@ namespace WaferandChipProcessing
 			for ( int i = 0 ; i < result.OutData.Count ; i++ )
             {
                 //csvExport.Append( result.OutData[i].Hindex+1);
-                csvExport.Append( result.OutData[i].HidxPN);
+                csvExport.Append( result.OutData[i].HidxPN-1);
                 csvExport.Append( delimiter );
                 //csvExport.Append( result.OutData[i].Windex+1 );
                 csvExport.Append( result.OutData[i].WidxPN );

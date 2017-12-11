@@ -402,10 +402,10 @@ namespace WaferandChipProcessing
 		//.Threshold(200);
 
 		Func<Image<Gray , byte> , Image<Gray , byte>> CreateMethod_PlaynittideB2 =>
-		img => img.Threshold( 20 );
+		img => img.ThresholdAdaptive( new Gray( 255 ) , AdaptiveThresholdType.GaussianC , ThresholdType.Binary , 555 , new Gray( 0 ) );
 
 		Func<Image<Gray , byte> , Image<Gray , byte>> CreateMethod_PlaynittideG1 =>
-		img => img.Threshold( 20 );
+		img => img.ThresholdAdaptive( new Gray( 255 ) , AdaptiveThresholdType.GaussianC , ThresholdType.Binary , 555 , new Gray( 0 ) );
 
 
 

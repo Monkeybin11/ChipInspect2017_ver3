@@ -8,7 +8,9 @@ namespace WaferandChipProcessing
 {
 	public class ConstrainInfo_Playnitride
 	{
-		public readonly double BoundaryLen = 8127;
+		//public readonly double BoundaryLen = 8127; // B1
+		//public readonly double BoundaryLen = 8141; // B2
+		public readonly double BoundaryLen = 8500;  // G1
 	
 		public readonly Tuple<double,double> Center;
 
@@ -20,7 +22,16 @@ namespace WaferandChipProcessing
 
 	public static class Playnitride_Ext
 	{
-		public static int XIDxOffset = 403;
+		// B1
+		//public static int XIDxOffset = 403;
+		//public static int YIDxOffset = 700;
+
+		// B2
+		//public static int XIDxOffset = 402;
+		//public static int YIDxOffset = 736;
+
+		//G1
+		public static int XIDxOffset = 495;
 		public static int YIDxOffset = 700;
 
 		public static int ToPNPosX( this int x )

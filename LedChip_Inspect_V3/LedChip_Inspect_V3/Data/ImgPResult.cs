@@ -57,8 +57,8 @@ namespace WaferandChipProcessing.Data
         public int Hindex;
         public int Windex;
 
-		public int HidxPN => Hindex.ToPNPosX();
-		public int WidxPN => Windex.TOPNPosY();
+		public int HidxPN => Hindex.TOPNPosY();
+		public int WidxPN => Windex.ToPNPosX();
 
         public int HindexError;
         public int WindexError;
