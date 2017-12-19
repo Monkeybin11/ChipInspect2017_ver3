@@ -152,3 +152,4 @@ E:\ChipInspect2017_ver3\LedChip_Inspect_V3\LedChip_Inspect_V3\obj\x64\Debug\LedC
 E:\ChipInspect2017_ver3\LedChip_Inspect_V3\LedChip_Inspect_V3\obj\x64\Debug\LedChip_Inspect_V3.csproj.GenerateResource.Cache
 E:\ChipInspect2017_ver3\LedChip_Inspect_V3\LedChip_Inspect_V3\obj\x64\Debug\LedChip_Inspect_ver3.exe
 E:\ChipInspect2017_ver3\LedChip_Inspect_V3\LedChip_Inspect_V3\obj\x64\Debug\LedChip_Inspect_ver3.pdb
+C:\00GitProject\ChipInspect2017_ver3\LedChip_Inspect_V3\LedChip_Inspect_V3\bin\x64\Debug\LedChip_Inspect_ver3.exe.config
