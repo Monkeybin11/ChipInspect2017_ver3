@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-E:\ChipInspect2017_ver3\LedChip_Inspect_V3\LedChip_Inspect_V3\obj\x64\Debug\
+C:\00GitProject\ChipInspect2017_ver3\LedChip_Inspect_V3\LedChip_Inspect_V3\obj\x64\Debug\
 LedChip_Inspect_ver3
 none
 false
 DEBUG;TRACE
-E:\ChipInspect2017_ver3\LedChip_Inspect_V3\LedChip_Inspect_V3\App.xaml
+C:\00GitProject\ChipInspect2017_ver3\LedChip_Inspect_V3\LedChip_Inspect_V3\App.xaml
 3-1260861683
 5-281886746
-41107845166
-101517367125
+41-19770550
+101869214023
 MainWindow.xaml;Resources\Icons.xaml;Resources\IconsNonShared.xaml;
 
-False
+True
 
