@@ -398,16 +398,26 @@ namespace WaferandChipProcessing
 					var rec = idxrec.Rectangle;
 					var intenSum = SumInsideBox( rec );
 
-					if ( InValidArea( xpos , ypos , CnstPN ) )
-					{
-						src [ j ] [ i ] = new ExResult( j , i
-											 , ( int )ypos - ( int )( rec.Y + rec.Height / 2 )
-											 , ( int )xpos - ( int )( rec.X + rec.Width / 2 )
-											 , Classifier( intenSum , constrain )
-											 , intenSum
-											 , rec.Width * rec.Height
-											 , rec );
-					}
+					src [ j ] [ i ] = new ExResult( j , i
+										 , ( int )ypos - ( int )( rec.Y + rec.Height / 2 )
+										 , ( int )xpos - ( int )( rec.X + rec.Width / 2 )
+										 , Classifier( intenSum , constrain )
+										 , intenSum
+										 , rec.Width * rec.Height
+										 , rec );
+
+
+					/// use cutoff non chip area
+					//if ( InValidArea( xpos , ypos , CnstPN ) )
+					//{
+					//	src [ j ] [ i ] = new ExResult( j , i
+					//						 , ( int )ypos - ( int )( rec.Y + rec.Height / 2 )
+					//						 , ( int )xpos - ( int )( rec.X + rec.Width / 2 )
+					//						 , Classifier( intenSum , constrain )
+					//						 , intenSum
+					//						 , rec.Width * rec.Height
+					//						 , rec );
+					//}
 					return Unit();
 				} );
 

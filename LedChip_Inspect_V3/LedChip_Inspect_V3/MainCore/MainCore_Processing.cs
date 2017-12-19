@@ -399,32 +399,32 @@ namespace WaferandChipProcessing
 				try
 				{
 
-			
-				foreach ( var item in list )
-				{
-						if ( item == null ) continue;
-					if ( item.OKNG == "OK" )
-					{
-						int xs = (int)estedChipP[ item.Hindex , item.Windex , 1] - 3;
-						int ys = (int)estedChipP[ item.Hindex , item.Windex , 0] - 3;
 
-						if ( item.Intensity < PData.IntenSumDWLimit )
+					foreach ( var item in list )
+					{
+						if ( item == null ) continue;
+						if ( item.OKNG == "OK" )
 						{
-							//Console.WriteLine( item.Intensity );
-							item.OKNG = "LOW";
-							SetLowColor( indexingImage , item.Hindex , item.Windex );
-							targetimg.Draw( item.BoxData.ExpendRect( thickness + 1 ) , ApLowColor , thickness );
-							//targetimg.Draw( item.BoxData.ExpendRect(-(thickness+1)) , ApLowColor , thickness);
+							int xs = (int)estedChipP[ item.Hindex , item.Windex , 1] - 3;
+							int ys = (int)estedChipP[ item.Hindex , item.Windex , 0] - 3;
+
+							if ( item.Intensity < PData.IntenSumDWLimit )
+							{
+								//Console.WriteLine( item.Intensity );
+								item.OKNG = "LOW";
+								SetLowColor( indexingImage , item.Hindex , item.Windex );
+								targetimg.Draw( item.BoxData.ExpendRect( thickness + 1 ) , ApLowColor , thickness );
+								//targetimg.Draw( item.BoxData.ExpendRect(-(thickness+1)) , ApLowColor , thickness);
+							}
+							else if ( item.Intensity > PData.IntenSumUPLimit )
+							{
+								item.OKNG = "OVER";
+								SetOverColor( indexingImage , item.Hindex , item.Windex );
+								targetimg.Draw( item.BoxData.ExpendRect( ( thickness + 1 ) ) , ApOverColor , thickness );
+							}
 						}
-						else if ( item.Intensity > PData.IntenSumUPLimit )
-						{
-							item.OKNG = "OVER";
-							SetOverColor( indexingImage , item.Hindex , item.Windex );
-							targetimg.Draw( item.BoxData.ExpendRect( ( thickness + 1 ) ) , ApOverColor , thickness );
-						}
-					}
 						idx++;
-				}
+					}
 				}
 				catch ( Exception ex)
 				{

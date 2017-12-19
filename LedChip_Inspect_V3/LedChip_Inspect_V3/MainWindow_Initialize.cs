@@ -38,17 +38,17 @@ namespace WaferandChipProcessing
     {
         void InitDisplay(MainCore core)
         {
-            nudCWNum.Value = 787;
-            nudCHNum.Value = 700;
+            nudCWNum.Value = 800;
+            nudCHNum.Value = 600;
             nudThresh.Value = 40;
-            nudAreaUpLimit.Value = 210;
-            nudAreaDWLimit.Value = 1;
-            nudIntenSumUPLimit.Value = 15000;
-            nudIntenSumDWLimit.Value = 2000;
+            nudAreaUpLimit.Value = 250;
+            nudAreaDWLimit.Value = 50;
+            nudIntenSumUPLimit.Value = 50000;
+            nudIntenSumDWLimit.Value = 10000;
             nudboxSizeH.Value = 100;
             nudboxSizeW.Value = 100;
             nudThickness.Value = 1;
-
+			
             nudCropRatio.Value = 280;
             nudCropRatioAdv.Value = 5;
 
@@ -82,11 +82,12 @@ namespace WaferandChipProcessing
 			sampleType2Idx.Add( "21. PlaynittideB1" , SampleType.PlaynittideB1 );
 			sampleType2Idx.Add( "22. PlaynittideB2" , SampleType.PlaynittideB2 );
 			sampleType2Idx.Add( "23. PlaynittideG1" , SampleType.PlaynittideG1 );
+			sampleType2Idx.Add( "24. Guang20171218" , SampleType.Guang20171218 );
 			sampleType2Idx.Select((s, ix) => Tuple.Create(ix, s)); // like List<tuple> 
 
             core.SampleTypeList = sampleType2Idx;
             cbSampleMethod.ItemsSource = sampleType2Idx.Select((v) => v.Key).ToList();
-			cbSampleMethod.SelectedIndex = 22;
+			cbSampleMethod.SelectedIndex = 24;
 
 			//nudEpiYoffset.Value  = 25000;
             //nudEpiX1Offset.Value = 16666;

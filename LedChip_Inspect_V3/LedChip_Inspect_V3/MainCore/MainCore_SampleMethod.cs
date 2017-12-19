@@ -53,6 +53,7 @@ namespace WaferandChipProcessing
 			Proc_Method_List.Add( SampleType.PlaynittideB1 , CreateMethod_PlaynittideB1 );
 			Proc_Method_List.Add( SampleType.PlaynittideB2 , CreateMethod_PlaynittideB2 );
 			Proc_Method_List.Add( SampleType.PlaynittideG1 , CreateMethod_PlaynittideG1 );
+			Proc_Method_List.Add( SampleType.Guang20171218 , CreateMethod_Guang20171218 );
 		}
 
         Func<Image<Gray , byte> , Image<Gray , byte>> CreateMethod_None()
@@ -407,7 +408,7 @@ namespace WaferandChipProcessing
 		Func<Image<Gray , byte> , Image<Gray , byte>> CreateMethod_PlaynittideG1 =>
 		img => img.ThresholdAdaptive( new Gray( 255 ) , AdaptiveThresholdType.GaussianC , ThresholdType.Binary , 555 , new Gray( 0 ) );
 
-
-
+		Func<Image<Gray , byte> , Image<Gray , byte>> CreateMethod_Guang20171218 =>
+			img =>   img.Threshold( 70 );
 	}
 }
