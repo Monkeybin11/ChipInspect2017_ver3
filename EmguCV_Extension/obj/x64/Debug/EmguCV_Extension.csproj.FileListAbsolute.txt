@@ -20,12 +20,3 @@ E:\ChipInspect2017_ver3\EmguCV_Extension\bin\x64\Debug\System.Collections.Immuta
 E:\ChipInspect2017_ver3\EmguCV_Extension\obj\x64\Debug\EmguCV_Extension.csprojResolveAssemblyReference.cache
 E:\ChipInspect2017_ver3\EmguCV_Extension\obj\x64\Debug\EmguCV_Extension.dll
 E:\ChipInspect2017_ver3\EmguCV_Extension\obj\x64\Debug\EmguCV_Extension.pdb
-C:\00GitProject\ChipInspect2017_ver3\EmguCV_Extension\bin\x64\Debug\EmguCV_Extension.dll
-C:\00GitProject\ChipInspect2017_ver3\EmguCV_Extension\bin\x64\Debug\EmguCV_Extension.pdb
-C:\00GitProject\ChipInspect2017_ver3\EmguCV_Extension\bin\x64\Debug\ModelLib.dll
-C:\00GitProject\ChipInspect2017_ver3\EmguCV_Extension\bin\x64\Debug\SpeedyCoding.dll
-C:\00GitProject\ChipInspect2017_ver3\EmguCV_Extension\bin\x64\Debug\System.ValueTuple.dll
-C:\00GitProject\ChipInspect2017_ver3\EmguCV_Extension\bin\x64\Debug\System.Collections.Immutable.xml
-C:\00GitProject\ChipInspect2017_ver3\EmguCV_Extension\obj\x64\Debug\EmguCV_Extension.csprojResolveAssemblyReference.cache
-C:\00GitProject\ChipInspect2017_ver3\EmguCV_Extension\obj\x64\Debug\EmguCV_Extension.dll
-C:\00GitProject\ChipInspect2017_ver3\EmguCV_Extension\obj\x64\Debug\EmguCV_Extension.pdb
