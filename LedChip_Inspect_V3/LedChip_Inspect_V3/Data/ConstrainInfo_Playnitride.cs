@@ -40,5 +40,19 @@ namespace WaferandChipProcessing
 
 		public static int TOPNPosY( this int y  )
 			=> YIDxOffset - y;
-	}
+
+
+        public static int X_LGIDxOffset = 495;
+        public static int Y_LGIDxOffset = 700;
+
+        public static int ToLGPosX(this int x)
+            => x - X_LGIDxOffset;
+
+
+        public static int TOLGPosY(this int y)
+            => Y_LGIDxOffset - y;
+
+
+
+    }
 }

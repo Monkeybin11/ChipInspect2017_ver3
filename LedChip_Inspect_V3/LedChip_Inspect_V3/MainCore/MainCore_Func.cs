@@ -214,6 +214,7 @@ namespace WaferandChipProcessing
             MapImg2Canv = Convt_Real2window( canvas.Width , canvas.Height , OriginImg.Width , OriginImg.Height );
             MapCanv2ImgLTRB = Convt_Window2Real( corner.Width , corner.Height , LTRBPixelNumberW , LTRBPixelNumberH );
             SumInsideBox = FnSumInsideBox( OriginImg );
+            //SumInsideBox = FnSumInsideBox2( OriginImg ); // for edge remove 2pixel
             SetCornerRect = FnSetCornerRect( new EmguCV_Extension.CornerMode[] {
                 EmguCV_Extension.CornerMode.LeftTop,
                 EmguCV_Extension.CornerMode.LeftBot,

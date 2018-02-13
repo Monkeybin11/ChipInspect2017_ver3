@@ -114,6 +114,15 @@ namespace Image_Processing_Test
             RegistHisroty(WorkingImg);
         }
 
+        private void btnToZeroThres_Click( object sender, EventArgs e )
+        {
+            var thres = (int)nudThres.Value;
+            WorkingImg = WorkingImg.ThresholdToZero( new Gray( thres ) );
+            rtxLog.AppendText( "Thres_Click  " + thres.ToString() + Environment.NewLine );
+            RegistHisroty( WorkingImg );
+        }
+
+
         private void ThresToZero_Click(object sender, EventArgs e)
         {
             var thres = (int)nudThres.Value;
@@ -998,8 +1007,90 @@ namespace Image_Processing_Test
 		{
 			new BackGroundCorrection().ShowDialog();
 		}
-	}
-	public static class ExtensionP
+
+        private void btnCrop_Click( object sender, EventArgs e )
+        {
+            new CropWin().ShowDialog();
+        }
+
+
+        public Point[] FindCenter( List<VectorOfPoint> contours )
+            {
+                Point[] centerpoins = new Point[contours.Count];
+
+                for ( int i = 0 ; i<contours.Count ; i++ )
+                {
+                    var moments = CvInvoke.Moments( contours[i] , false );
+                    centerpoins[i] = new Point( ( int )( moments.M10 / moments.M00 )
+                                                , ( int )( moments.M01 / moments.M00 ) );
+                }
+
+                return centerpoins;
+            } 
+
+        private void btnMomnet_Click( object sender, EventArgs e )
+        {
+            VectorOfVectorOfPoint contours = new VectorOfVectorOfPoint();
+            var tempimg1 = WorkingImg.ThresholdBinary(new Gray(30) , new Gray(255)).Dilate(2).Clone();
+            var tempimg2 = WorkingImg.Clone();
+            CvInvoke.FindContours( tempimg1, contours, null, RetrType.List, ChainApproxMethod.ChainApproxNone );
+            Image<Bgr, byte> colorimg = tempimg2.Convert<Bgr, byte>();
+
+            List<VectorOfPoint> list = new List<VectorOfPoint>();
+            List< MCvScalar > colorlist = new List<MCvScalar>();
+            for ( int i = 0 ; i < contours.Size ; i++ )
+            {
+                var area = CvInvoke.ContourArea( contours[i] );
+
+                if ( area > 10000 && area < 11000 )
+                {
+                    CvInvoke.DrawContours( colorimg, contours, i, new MCvScalar( 255, 100, 30 ) );
+                    var cntr =  contours[i];
+                    list.Add( cntr );
+                    Console.WriteLine( area.ToString() );
+                    colorlist.Add( new MCvScalar( 255, 100, 30 ) );
+                }
+
+                if ( area > 100000 && area < 120000 )
+                {
+                    CvInvoke.DrawContours( colorimg, contours, i, new MCvScalar( 14, 200, 40 ) );
+                    var cntr =  contours[i];
+                    list.Add( cntr );
+                    Console.WriteLine( area.ToString() );
+                    colorlist.Add( new MCvScalar( 14, 200, 40 ) );
+                }
+
+
+               // if ( area > (double)nudAreaDwLimit.Value && area < (double)nudAreaUpLimit.Value )
+               // {
+               //     CvInvoke.DrawContours( colorimg, contours, i, new MCvScalar( 14, 200, 40 ) );
+               //     var cntr =  contours[i];
+               //     list.Add( cntr );
+               //     Console.WriteLine( area.ToString() );
+               // }
+               
+            }
+
+            var centers = FindCenter(list);
+
+            for ( int i = 0 ; i < centers.Count() ; i++ )
+            {
+                CvInvoke.Circle( colorimg, centers[i], 1, colorlist[i] );
+
+
+                var x = centers[i].X.ToString();
+                var y = centers[i].Y.ToString();
+                string xy = x +" , " + y ;
+
+                Point textpos = new Point( centers[i].X - 40 , centers[i].Y - 10 ) ;
+                CvInvoke.PutText( colorimg, xy, textpos, FontFace.HersheyPlain, 1, colorlist[i] );
+            }
+            rtxLog.AppendText( "Center Moment" + Environment.NewLine );
+            //RegistHisroty( WorkingImg, false );
+            imageBox1.Image = colorimg;
+        }
+    }
+    public static class ExtensionP
     {
         public static TResult Measure<TSource, TResult>(
             this TSource @this,

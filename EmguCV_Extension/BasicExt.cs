@@ -173,6 +173,39 @@ namespace EmguCV_Extension
             } );
             return sumbox;
         }
+
+        public static Func<Rectangle, double> FnSumInsideBox2( Image<Gray, byte> src )
+        {
+            var sumbox = new Func<Rectangle , double>((Rectangle box)=>
+            {
+                double sum = 0;
+                List<double> elelist = new List<double>();
+                for (int i = box.X +2 ; i < box.X + box.Width - 2; i++)
+                {
+                    for (int j = box.Y +2 ; j < box.Y + box.Height -2; j++)
+                    {
+                        elelist.Add(src.Data[j,i,0]);
+                        //sum += src.Data[j,i,0];
+                    }
+                }
+
+                var five = (int)( elelist.Count * 0.05);
+
+                var mid = elelist.Count - five;
+
+                
+                
+
+
+
+
+
+                return elelist.Skip(five).Take(mid).Sum();
+                ;
+            } );
+            return sumbox;
+        }
+
         public static Func<int , int , double> FnSumAreaPoint( int height , int width , Image<Gray , byte> img )
         {
             var sumareap = new Func<int , int , double>((int y, int x)=>
@@ -205,9 +238,11 @@ namespace EmguCV_Extension
         {
             var findpasscntr = new Func<Image<Gray , byte> , VectorOfVectorOfPoint>((imgori) => {
 
+                imgori.Save(@"D:\temp\test3.png");
                 VectorOfVectorOfPoint contours = new VectorOfVectorOfPoint();
                 VectorOfVectorOfPoint passcontours = new VectorOfVectorOfPoint();
                 CvInvoke.FindContours( imgori , contours , null , RetrType.External , ChainApproxMethod.ChainApproxNone );
+                var c = contours.Size;
                 for ( int i = 0 ; i < contours.Size ; i++ )
                 {
 					double areaSize = CvInvoke.ContourArea(contours[i]);
@@ -216,6 +251,8 @@ namespace EmguCV_Extension
                         passcontours.Push( contours[i] );
                     }
                 }
+
+                var temp = passcontours.Size;
                 return passcontours;
             } );
             return findpasscntr;

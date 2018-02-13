@@ -43,3 +43,4 @@ C:\00GitProject\ChipInspect2017_ver3\Image_Processing_Test\obj\x64\Debug\Image_P
 C:\00GitProject\ChipInspect2017_ver3\Image_Processing_Test\obj\x64\Debug\Image_Processing_Test.csproj.GenerateResource.Cache
 C:\00GitProject\ChipInspect2017_ver3\Image_Processing_Test\obj\x64\Debug\Image_Processing_Test.exe
 C:\00GitProject\ChipInspect2017_ver3\Image_Processing_Test\obj\x64\Debug\Image_Processing_Test.pdb
+C:\00GitProject\ChipInspect2017_ver3\Image_Processing_Test\obj\x64\Debug\Image_Processing_Test.CropWin.resources

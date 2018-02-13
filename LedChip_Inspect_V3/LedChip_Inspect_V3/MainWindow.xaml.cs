@@ -222,6 +222,7 @@ namespace WaferandChipProcessing
                 {
                     timer.Stop();
                     this.BeginInvoke( () => lblRunningTime.Content = timer.ElapsedMilliseconds / 1000 );
+                    timer.Reset();
                 }
             } ) );
         }
@@ -696,5 +697,7 @@ namespace WaferandChipProcessing
             
 
         }
+
+      
     }
 }

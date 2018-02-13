@@ -54,6 +54,9 @@ namespace WaferandChipProcessing
 			Proc_Method_List.Add( SampleType.PlaynittideB2 , CreateMethod_PlaynittideB2 );
 			Proc_Method_List.Add( SampleType.PlaynittideG1 , CreateMethod_PlaynittideG1 );
 			Proc_Method_List.Add( SampleType.Guang20171218 , CreateMethod_Guang20171218 );
+			Proc_Method_List.Add( SampleType.Sam1218 , CreateMethod_Sam1218 );
+			Proc_Method_List.Add( SampleType.PlayRedSample , CreateMethod_PlayRedSample );
+			Proc_Method_List.Add( SampleType.Custom , CreateMethod_Custom );
 		}
 
         Func<Image<Gray , byte> , Image<Gray , byte>> CreateMethod_None()
@@ -62,6 +65,7 @@ namespace WaferandChipProcessing
             {
                 //var backInten     = BackgroundInten(img);
                 var thresImg      = DoThreshold(img , PData.ThresholdV );
+                
                 return thresImg;
             } );
             return method;
@@ -410,5 +414,18 @@ namespace WaferandChipProcessing
 
 		Func<Image<Gray , byte> , Image<Gray , byte>> CreateMethod_Guang20171218 =>
 			img =>   img.Threshold( 70 );
-	}
+
+        Func<Image<Gray, byte>, Image<Gray, byte>> CreateMethod_Sam1218 =>
+         img => img.ThresholdAdaptive( new Gray( 255 ), AdaptiveThresholdType.GaussianC, ThresholdType.Binary, 153, new Gray( 0 ) );
+
+
+        Func<Image<Gray, byte>, Image<Gray, byte>> CreateMethod_PlayRedSample =>
+            img => img.ThresholdToZero( new Gray(20))
+                      .ThresholdAdaptive( new Gray( 255 ), AdaptiveThresholdType.GaussianC, ThresholdType.Binary, PData.ThresholdV, new Gray( 0 ) );
+
+        Func<Image<Gray, byte>, Image<Gray, byte>> CreateMethod_Custom =>
+         img => img
+         
+         .ThresholdAdaptive(new Gray(255), AdaptiveThresholdType.GaussianC, ThresholdType.Binary, PData.ThresholdV, new Gray(0));
+    }
 }

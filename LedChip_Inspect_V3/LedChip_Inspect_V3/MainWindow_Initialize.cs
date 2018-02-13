@@ -38,18 +38,47 @@ namespace WaferandChipProcessing
     {
         void InitDisplay(MainCore core)
         {
-            nudCWNum.Value = 800;
-            nudCHNum.Value = 600;
-            nudThresh.Value = 40;
-            nudAreaUpLimit.Value = 250;
-            nudAreaDWLimit.Value = 50;
-            nudIntenSumUPLimit.Value = 50000;
-            nudIntenSumDWLimit.Value = 10000;
+            //nudCWNum.Value = 807;
+            //nudCHNum.Value = 698;
+            //nudThresh.Value = 40;
+            //nudAreaUpLimit.Value = 900;
+            //nudAreaDWLimit.Value = 14;
+            //nudIntenSumUPLimit.Value = 14000;
+            //nudIntenSumDWLimit.Value = 2500;
+
+            // samsung
+            //nudCWNum.Value = 562;
+            //nudCHNum.Value = 691;
+           //
+           //#region samsung
+           //nudCWNum.Value = 677;
+           //nudCHNum.Value = 637;
+           //
+           //nudThresh.Value = 91;
+           //nudAreaUpLimit.Value = 900;
+           //nudAreaDWLimit.Value = 20;
+           //nudIntenSumUPLimit.Value = 19000;
+           //nudIntenSumDWLimit.Value = 1200;
+           //
+           //#endregion
+
+            #region SVC
+            nudCWNum.Value = 677;
+            nudCHNum.Value = 637;
+
+            nudThresh.Value = 91;
+            nudAreaUpLimit.Value = 64000;
+            nudAreaDWLimit.Value = 5000;
+            nudIntenSumUPLimit.Value = 19000000;
+            nudIntenSumDWLimit.Value = 1000;
+
+            #endregion 
+
             nudboxSizeH.Value = 100;
             nudboxSizeW.Value = 100;
             nudThickness.Value = 1;
 			
-            nudCropRatio.Value = 280;
+            nudCropRatio.Value = 50;
             nudCropRatioAdv.Value = 5;
 
 			nudTol.Value = 3;
@@ -83,11 +112,15 @@ namespace WaferandChipProcessing
 			sampleType2Idx.Add( "22. PlaynittideB2" , SampleType.PlaynittideB2 );
 			sampleType2Idx.Add( "23. PlaynittideG1" , SampleType.PlaynittideG1 );
 			sampleType2Idx.Add( "24. Guang20171218" , SampleType.Guang20171218 );
+			sampleType2Idx.Add( "25. Sam1218" , SampleType.Sam1218 );
+			sampleType2Idx.Add( "26. PlyRedSample" , SampleType.PlayRedSample );
+			sampleType2Idx.Add( "27. Custom" , SampleType.Custom );
 			sampleType2Idx.Select((s, ix) => Tuple.Create(ix, s)); // like List<tuple> 
 
             core.SampleTypeList = sampleType2Idx;
             cbSampleMethod.ItemsSource = sampleType2Idx.Select((v) => v.Key).ToList();
-			cbSampleMethod.SelectedIndex = 24;
+			cbSampleMethod.SelectedIndex = 28;
+            
 
 			//nudEpiYoffset.Value  = 25000;
             //nudEpiX1Offset.Value = 16666;
@@ -98,7 +131,7 @@ namespace WaferandChipProcessing
 			//nudEpiX2Offset.Value = 20000;
 
 			nudEpiYoffset.Value = 7499;
-			nudEpiX1Offset.Value = 5000;
+            nudEpiX1Offset.Value = 5000;
 			nudEpiX2Offset.Value = 10000;
 
 			nudEpiResolution .Value = 10;

@@ -164,7 +164,7 @@
                                 <Button x:Name="btnInv"      Grid.Row="9 "  Grid.Column="1" Content="Inverse" FontSize="12" Margin="10,0,10,2" Height="30"   />
                                 <Button x:Name="btnRainbow"  Grid.Row="10"  Grid.Column="1" Content="Rainbow" FontSize="12" Margin="10,0,10,2" Height="30"   />
                                 <Button x:Name="btnHsv"      Grid.Row="10"  Grid.Column="0" Content="Hsv"     FontSize="12" Margin="10,0,10,2" Height="30"   />
-                                
+                                <Button x:Name="btnBatch"    Grid.Row="11"  Grid.Column="0" Content="Batch Proc"     FontSize="12" Margin="10,0,10,2" Height="30"   Click="btnBatch_Click"/>
 
                                 <Border BorderThickness="3" BorderBrush="#FF086F9E" Margin="3,3,3,3" Grid.ColumnSpan="2" Grid.RowSpan="17" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
                                 <ComboBox x:Name="cbSampleMethod"  Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="1" VerticalAlignment="Top" Width="180" SelectionChanged="cbSampleMethod_SelectionChanged"/>
@@ -196,7 +196,6 @@
 
                                 <Label Grid.Row="4" Grid.Column="0" Content="Line Thickness" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center"          />
                                 <mahapp:NumericUpDown  x:Name="nudThickness" Grid.Row="4" Grid.Column="1" Width="80" Height="13"  HorizontalAlignment="Center" VerticalAlignment="Center"/>
-
 
                                 <CheckBox x:Name="ckbAdvancedPos" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" Content="---- Advanced Chip Pos  ----" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="20,0,0,0" FontSize="12" Click="ChipPosCheckbox" />
 

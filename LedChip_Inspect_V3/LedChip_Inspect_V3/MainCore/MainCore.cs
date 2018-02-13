@@ -96,7 +96,13 @@ namespace WaferandChipProcessing
 
         public void SaveData( ImgPResult result , string path) {
             string delimiter = ",";
+
+            var res = result.OutData.Select( x => x.Intensity).Aggregate( ( f, s ) =>  f + s);
+
+
             StringBuilder csvExport = new StringBuilder(); //
+            //csvExport.AppendLine( res.ToString() );
+
             // 1
             csvExport.Append( "Result" );
             csvExport.Append( delimiter );

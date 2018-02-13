@@ -119,6 +119,12 @@
       <DependentUpon>BackGroundCorrection.cs</DependentUpon>
     </Compile>
     <Compile Include="Canvas.cs" />
+    <Compile Include="CropWin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CropWin.Designer.cs">
+      <DependentUpon>CropWin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Data.cs" />
     <Compile Include="Extension.cs" />
     <Compile Include="Form1.cs">
@@ -143,6 +149,9 @@
     </Compile>
     <EmbeddedResource Include="BackGroundCorrection.resx">
       <DependentUpon>BackGroundCorrection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CropWin.resx">
+      <DependentUpon>CropWin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

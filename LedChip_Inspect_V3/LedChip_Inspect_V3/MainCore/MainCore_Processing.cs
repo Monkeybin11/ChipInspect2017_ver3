@@ -52,8 +52,12 @@ namespace WaferandChipProcessing
 						PData.IntenSumDWLimit
 					);
 					VectorOfVectorOfPoint contours;
-					
-					if ( debugmode )
+
+                    var proceced = Proc_Method_List [ sampletype ]( baseimg );
+                    proceced.Save( @"C:\Data\180102_플레이나이트라이드\line\B-CC7B00126_RE\test\before.png" );
+
+
+                    if ( debugmode )
 					{
 						contours = baseimg
 									 .Map( img => Proc_Method_List [ sampletype ]( img ) )

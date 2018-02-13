@@ -33,18 +33,24 @@ using System.IO;
 
 namespace WaferandChipProcessing
 {
+    using FilePath = String;
+
 	public partial class MainWindow
 	{
-		#region MainFunction Button Evt
+        #region MainFunction Button Evt
 
-		private async void btnLoad_Click( object sender , RoutedEventArgs e )
+        List<FilePath> Pathlist = new List<FilePath>();
+        string imgpath;
+
+        private async void btnLoad_Click( object sender , RoutedEventArgs e )
 		{
 			OpenFileDialog ofd = new OpenFileDialog();
 			if ( ofd.ShowDialog() == System.Windows.Forms.DialogResult.OK )
 			{
-				// Init Core.PData
-
-				Core.PData = new ImgPData();
+                // Init Core.PData
+                Pathlist = Directory.GetFiles ( System.IO.Path.GetDirectoryName( ofd.FileName)).ToList();
+                imgpath = ofd.FileName;
+                Core.PData = new ImgPData();
 				bool ischecked = (bool)ckbAdvancedPos.IsChecked;
 				Mouse.OverrideCursor = System.Windows.Input.Cursors.Wait;
 				Core.ChipPosMode = ischecked ? AdvancedChipPos.First : AdvancedChipPos.None;
@@ -125,6 +131,12 @@ namespace WaferandChipProcessing
 			}
 		}
 
+        public SVCConstrain GenerateConstrain()
+            => new SVCConstrain(
+                    ( int ) (nudIntenSumUPLimit.Value ),
+                    ( int ) (nudIntenSumDWLimit.Value ) ,
+                    ( int ) (nudAreaUpLimit.Value ),
+                    ( int ) (nudAreaDWLimit.Value ));
 
 		private async void btnStartProcssing_Click( object sender , RoutedEventArgs e )
 		{
@@ -145,17 +157,20 @@ namespace WaferandChipProcessing
 				var gridstyle = (bool)chbGridStyle.IsChecked;
 				var needdebug = (bool)chbDebugImg.IsChecked;
 				Core.SelectedSample = Core.SampleTypeList [ cbSampleMethod.SelectedItem as string ];
+                var constrain = GenerateConstrain();
 
 
-					if ( ReadyProc() ) await Task.Run( ()
+                    if ( ReadyProc() ) await Task.Run( ()
 					//=> Core.ProcessingStep1_Normal(
 					=> Core.ProcessingStep1_Version2(
+					//=> Core.ProcessingStep1_PrePos(
 					   thresvalue
 					   , Core.SelectedSample // automated
 					   , ( int )Core.PData.ChipHNum
 					   , ( int )Core.PData.ChipWNum
 					   , gridstyle
-					   , needdebug )
+                       //, constrain
+                       , needdebug )
 					   (
 						   Core.OriginImg ,
 						   Core.ColorOriImg
@@ -168,14 +183,108 @@ namespace WaferandChipProcessing
 					Mouse.OverrideCursor = null;
 				} );
 
-			}
+                
+
+                var root = System.IO.Path.GetDirectoryName(imgpath);
+                var name = System.IO.Path.GetFileName(imgpath).Split('.').First();
+
+                Core.SaveData(Core.PResult, root + "\\" + name + ".csv");
+                var resizedimg = Core.IndexViewImg.Resize(Core.ProcedImg.Width, Core.ProcedImg.Height, Inter.Nearest);
+                Core.SaveImg(Core.IndexViewImg, root + "\\" + name + "_OverView_Point2Chip.png");
+                //Core.SaveImg( resizedimg , sfd.FileName + "_OverView_SameSize.png" );
+                Core.SaveImg(Core.ProcedImg, root + "\\" + name + "_Proced.png");
+
+
+            }
 			catch ( Exception ex )
 			{
 				System.Windows.Forms.MessageBox.Show( "Main Processing Error : " + ex.ToString() );
 
 			}
 		}
-		private void btnSaveData_Click( object sender , RoutedEventArgs e )
+
+        private async void btnBatch_Click(object sender, RoutedEventArgs e)
+        {
+            foreach (var path in Pathlist)
+            {
+                try
+                {
+
+                Console.WriteLine(" Start File : {0}", path);
+                try
+                {
+
+                    Core.OriginImg = new Image<Gray, byte>(path);
+                    Core.ColorOriImg = new Image<Bgr, byte>(path);
+
+
+                    if (ckbAdvancedPos.IsChecked == true && (Core.PData.AdvHChipPos[0] == null || Core.PData.AdvHChipPos[1] == null || Core.PData.AdvHChipPos[2] == null))
+                    {
+                        System.Windows.MessageBox.Show("Select Position of Chip first");
+                        return;
+                    }
+
+                    timer.Start();
+                    this.BeginInvoke(() => Mouse.OverrideCursor = System.Windows.Input.Cursors.Wait);
+                    var thresvalue = (int)nudThresh.Value;
+                    Core.APBoxTolerance = nudTol.Value == null ? 1 : (int)nudTol.Value;
+
+                    var gridstyle = (bool)chbGridStyle.IsChecked;
+                    var needdebug = (bool)chbDebugImg.IsChecked;
+                    Core.SelectedSample = Core.SampleTypeList[cbSampleMethod.SelectedItem as string];
+
+
+                    if (ReadyProc()) await Task.Run(()
+                 //=> Core.ProcessingStep1_Normal(
+                 => Core.ProcessingStep1_Version2(
+                    thresvalue
+                    , Core.SelectedSample // automated
+                    , (int)Core.PData.ChipHNum
+                    , (int)Core.PData.ChipWNum
+                    , gridstyle
+                    , needdebug)
+                    (
+                        Core.OriginImg,
+                        Core.ColorOriImg
+                    ));
+
+                    this.BeginInvoke(() =>
+                    {
+                        imgPro.ImageSource = BitmapSrcConvert.ToBitmapSource(Core.ProcedImg);
+                        imgIndex.ImageSource = BitmapSrcConvert.ToBitmapSource(Core.IndexViewImg);
+                        Mouse.OverrideCursor = null;
+                    });
+
+                }
+                catch (Exception ex)
+                {
+                    System.Windows.Forms.MessageBox.Show("Main Processing Error : " + ex.ToString());
+
+                }
+
+                timer.Stop();
+                var time = timer.ElapsedMilliseconds / 1000;
+
+                lblProcTime.Content = time;
+
+                var root = System.IO.Path.GetDirectoryName(path);
+                var name = System.IO.Path.GetFileName(path);
+
+                Core.SaveData(Core.PResult, root+"\\"+ name+ ".csv");
+                var resizedimg = Core.IndexViewImg.Resize(Core.ProcedImg.Width, Core.ProcedImg.Height, Inter.Nearest);
+                Core.SaveImg(Core.IndexViewImg, root + "\\" + name + "_OverView_Point2Chip.png");
+                //Core.SaveImg( resizedimg , sfd.FileName + "_OverView_SameSize.png" );
+                Core.SaveImg(Core.ProcedImg, root + "\\" + name + "_Proced.png");
+
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.ToString());
+                }
+            }
+        }
+
+        private void btnSaveData_Click( object sender , RoutedEventArgs e )
 		{
 			SaveFileDialog sfd = new SaveFileDialog();
 			if ( sfd.ShowDialog() == System.Windows.Forms.DialogResult.OK )
@@ -192,7 +301,7 @@ namespace WaferandChipProcessing
 				{
 					var resizedimg = Core.IndexViewImg.Resize(Core.ProcedImg.Width, Core.ProcedImg.Height, Inter.Nearest);
 					Core.SaveImg( Core.IndexViewImg , sfd.FileName + "_OverView_Point2Chip.png" );
-					Core.SaveImg( resizedimg , sfd.FileName + "_OverView_SameSize.png" );
+					//Core.SaveImg( resizedimg , sfd.FileName + "_OverView_SameSize.png" );
 					Core.SaveImg( Core.ProcedImg , sfd.FileName + "_Proced.png" );
 
 					//HistogramList[0]?.Save( sfd.FileName + "_Histogram1.png" );

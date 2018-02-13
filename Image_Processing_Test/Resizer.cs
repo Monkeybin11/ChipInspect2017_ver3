@@ -16,6 +16,7 @@ using SpeedyCoding;
 
 namespace Image_Processing_Test
 {
+   
 	public partial class Resizer : Form
 	{
 
@@ -57,9 +58,12 @@ namespace Image_Processing_Test
 
 			SaveFileDialog ofd  = new SaveFileDialog();
 			ofd.InitialDirectory = basepath ;
+          
 			if ( ofd.ShowDialog() == DialogResult.OK )
 			{
-				var imgList = pathList.Select( x => new Image<Gray , byte>( x ).Resize( 0.5 , Inter.Cubic )).ToList();
+               
+
+                var imgList = pathList.Select( x => new Image<Gray , byte>( x ).Resize( (double)nudratio.Value , Inter.Cubic )).ToList();
 				imgList.ActLoop( ( x , i ) => x.Save( Path.GetDirectoryName(ofd.FileName).Print("Base") +"\\"+ Path.GetFileName( pathList [ i ] ).Print("Name") ) );
 			}
 

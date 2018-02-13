@@ -65,9 +65,14 @@ namespace WaferandChipProcessing
 					VectorOfVectorOfPoint contours;
 
 
-					//color_visual_img.Save( @"E\:001_Job\016_Samsung_Display_second\Test" +\\beforcntr.bmp" );
+                    //color_visual_img.Save( @"E\:001_Job\016_Samsung_Display_second\Test" +\\beforcntr.bmp" );
 
-					if ( debugmode )
+
+                    var proceced = Proc_Method_List [ sampletype ]( baseimg );
+                    //proceced.Save( @"C:\Data\180102_플레이나이트라이드\line\B-CC7B00126_RE\test\before.png" );
+
+
+                    if ( debugmode )
 					{
 						contours = baseimg
 									 .Map( Proc_Method_List [ sampletype ] )
@@ -89,11 +94,15 @@ namespace WaferandChipProcessing
 					var centerMoment = contours.Map( CalcCenter);
 					stw2.ElapsedMilliseconds.Print( "moment : " );
 					stw2.Restart();
-					var boxlist = contours.Map( ApplyBox );
+					var boxlist = contours.Map( ApplyBox ).OrderBy( x => x.Location.Y).ThenBy( x => x.Location.X).ToList();
 				
 					var color_visual_img3 = colorimg.Clone();
 					DrawBox( color_visual_img3 , boxlist );
-					if ( debugmode ) color_visual_img3.Save( TestFileSavePath.BasePath + "\\AftercntrBox.bmp" );
+
+
+                    //color_visual_img3.Save( @"C:\Data\180102_플레이나이트라이드\line\B-CC7B00126_RE\test\box.png" );
+
+                    if ( debugmode ) color_visual_img3.Save( TestFileSavePath.BasePath + "\\AftercntrBox.bmp" );
 		
 					byte[,,]   indexingImage = null;
 					if ( whiteGrid )
@@ -122,7 +131,15 @@ namespace WaferandChipProcessing
 											 .Apply(color_visual_img)
 											 .Apply(indexingImage);
 
-					PResult.OutData = NgResultInitializer(cHnum , cWnum)
+
+
+                    var temp1 = NgResultInitializer(cHnum , cWnum);
+                    var temp2 = resultGenerator(temp1);
+                    var res2 = ImportResult( estRes.IndexPos , boxlist , indexres , temp1 );
+
+
+
+                    PResult.OutData = NgResultInitializer(cHnum , cWnum)
 										.Map( resultGenerator )
 										.Flatten()
 										.ToList();
@@ -158,6 +175,7 @@ namespace WaferandChipProcessing
 					evtProcessingResult();
 					stw.Stop();
 					Console.WriteLine( "Process Time : " + stw.ElapsedMilliseconds );
+                    stw.Reset();
 				}
 				catch ( Exception er )
 				{
@@ -208,7 +226,7 @@ namespace WaferandChipProcessing
 						{
 							contours = baseimg
 										 .Map( Proc_Method_List [ sampletype ] )
-										 .Act( img => img.Save( TestFileSavePath.BasePath + "\\beforcntr.bmp" ) )
+										 .Act( img => img.Save( @"C:\Data\180102_플레이나이트라이드\line\B-CC7B00126_RE" + "\\beforcntr.bmp" ) )
 										 .Map( FindContour )
 										 .Map( Sortcontours );
 						}
@@ -267,11 +285,10 @@ namespace WaferandChipProcessing
 											 .Apply(indexingImage);
 
 
-						//var temp1 = NgResultInitializer(cHnum , cWnum);
-						//var temp2 = resultGenerator(temp1);
-						//
-						//
-						//var res2 = ImportResult( estRes.IndexPos , boxlist , indexres , temp1 );
+						var temp1 = NgResultInitializer(cHnum , cWnum);
+						var temp2 = resultGenerator(temp1);
+						var res2 = ImportResult( estRes.IndexPos , boxlist , indexres , temp1 );
+
 
 
 
@@ -390,6 +407,8 @@ namespace WaferandChipProcessing
 				() => Unit() , // NG Case
 				idx =>  // Non_NG Case
 				{
+                   
+
 					var j = idx.j;
 					var i = idx.i;
 					var ypos = ested[ j,i,0];
@@ -398,24 +417,27 @@ namespace WaferandChipProcessing
 					var rec = idxrec.Rectangle;
 					var intenSum = SumInsideBox( rec );
 
-					src [ j ] [ i ] = new ExResult( j , i
-										 , ( int )ypos - ( int )( rec.Y + rec.Height / 2 )
-										 , ( int )xpos - ( int )( rec.X + rec.Width / 2 )
-										 , Classifier( intenSum , constrain )
-										 , intenSum
-										 , rec.Width * rec.Height
-										 , rec );
+                    if ( i == 62 && j == 3 )
+                        Console.WriteLine();
 
+                        src [ j ] [ i ] = new ExResult( j , i
+                        					 , ( int )ypos - ( int )( rec.Y + rec.Height / 2 )
+                        					 , ( int )xpos - ( int )( rec.X + rec.Width / 2 )
+                        					 , Classifier( intenSum , constrain )
+                        					 , intenSum  /// (rec.Height * rec.Width ) // Samsung average
+                                             , rec.Width * rec.Height
+                        					 , rec );
+                        
 
-					/// use cutoff non chip area
-					//if ( InValidArea( xpos , ypos , CnstPN ) )
+                        /// use cutoff non chip area
+                    //    if ( InValidArea( xpos , ypos , CnstPN ) )
 					//{
 					//	src [ j ] [ i ] = new ExResult( j , i
 					//						 , ( int )ypos - ( int )( rec.Y + rec.Height / 2 )
 					//						 , ( int )xpos - ( int )( rec.X + rec.Width / 2 )
 					//						 , Classifier( intenSum , constrain )
-					//						 , intenSum
-					//						 , rec.Width * rec.Height
+					//						 , intenSum / ( rec.Height * rec.Width )
+                    //                         , rec.Width * rec.Height
 					//						 , rec );
 					//}
 					return Unit();
@@ -459,7 +481,8 @@ namespace WaferandChipProcessing
 
 	public class Constrain
 	{
-		public static double ValidLen => 8127; 
+		//public static double ValidLen => 8127; 
+		public static double ValidLen => 24000; 
 		public int UpInten;
 		public int DwInten;
 	}
